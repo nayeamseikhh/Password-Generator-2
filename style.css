@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Password_box {
+  background-color: rgb(1, 212, 43);
+  padding: 60px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 15px 25px 12px rgb(197, 242, 200);
+}
+h1 {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#c14bec, #0c9abe, #540b64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.PasswordView {
+  padding: 10px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 20px;
+}
+.PasswordView input {
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+button {
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  box-shadow: 5px 5px 15px gray;
+  cursor: pointer;
+  /* transition: all linear 0.3; */
+}
+
+.copyPassword {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
