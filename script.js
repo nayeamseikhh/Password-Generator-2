@@ -5,6 +5,7 @@ let copyPassword = document.querySelector(".copyPassword");
 generatePassword.addEventListener("click", function () {
   let passwordLength = 18;
   viewPassword.value = PasswordGenerator(passwordLength);
+  copyPassword.innerHTML = "Copy";
 });
 
 copyPassword.addEventListener("click", clickPassword);
@@ -23,4 +24,7 @@ function PasswordGenerator(passwordLength) {
 function clickPassword() {
   viewPassword.select();
   copyPassword.innerHTML = "📋";
+  document.execCommand("copy");
 }
+
+console.log(copyPassword);
